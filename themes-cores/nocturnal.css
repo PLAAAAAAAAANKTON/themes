@@ -69,51 +69,7 @@
 
 
 
-/* theme */
-:root {
-    --background-primary: #23283d;
-    --background-secondary: #1e2233;
-    --background-secondary-alt: #191f2e;
-    --background-tertiary: #101320;
-    --background-mobile-primary: #23283d;
-    --background-mobile-secondary: #1e2233;
-    --channeltextarea-background: #191f2e;
-    --background-accent: #7289da;
-    --background-message-hover: transparent;
-    --background-modifier-hover: #00000010;
-    --background-modifier-active: #0000001a;
-    --background-modifier-selected: #0000001f;
-    --deprecated-card-bg: #12141f63;
-    --background-floating: #101320;
-    --deprecated-quickswitcher-input-background: #101320;
-    --elevation-low: none;
-    --activity-card-background: #101320;
-    --input-background: #1e2233;
-    --gradientColor01: #00f260;
-    --gradientColor02: #0575e6;
-    --backgroundCode: #1e2731;
-    --backgroundName: rgba(0, 0, 0, 0.2);
-    
-    /* ═══════『 Radial Status 』═══════ */
-    --rs-small-spacing: 1px;
-    --rs-medium-spacing: 3px;
-    --rs-large-spacing: 3px;
-    --rs-small-width: 2px;
-    --rs-medium-width: 4px;
-    --rs-large-width: 4px;
-    --rs-width: 3px;
-    --rs-avatar-shape: 25%;
-    --rs-online-color: #43b581;
-    --rs-idle-color: #faa61a;
-    --rs-dnd-color: #f04747;
-    --rs-offline-color: #636b75;
-    --rs-streaming-color: #643da7;
-    --rs-invisible-color: #747f8d;
-    --rs-phone-visible: none;
-    --rs-phone-color: var(--rs-online-color);
 
-    --customFont: 'gg sans', sans-serif;
-}
 
 #app-mount .applicationStore-2nk7Lo,
 #app-mount .bg-1QIAus,
