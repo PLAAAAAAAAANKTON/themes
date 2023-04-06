@@ -1,9 +1,75 @@
-@import url("https://xcruxiex.github.io/themes/core/custom-font.css");
 @import url("https://xcruxiex.github.io/themes/core/settings-icons.css");
 @import url("https://xcruxiex.github.io/themes/core/hljs.css");
 @import url("https://nyri4.github.io/Discolored/main.css"); 
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 
+:root .buttons-3dF5Kd {
+  transition: opacity 150ms;
+}
+:root .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW {
+  position: fixed;
+  bottom: 25px;
+  left: 327.5px;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  min-width: unset;
+}
+:root .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW > .avatar-1EWyVD {
+  width: 40px !important;
+  height: 40px !important;
+}
+:root .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW > .avatar-1EWyVD foreignObject {
+  width: 100% !important;
+  height: 100% !important;
+}
+:root .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW > .avatar-1EWyVD .pointerEvents-2KjWnj {
+  x: 30px;
+  y: 30px;
+}
+:root .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW > .avatar-1EWyVD:hover {
+  opacity: 40%;
+}
+:root .panels-3wFtMD > .container-YkUktl > .avatarWrapper-1B9FTW > .avatar-1EWyVD + .nameTag-sc-gpq {
+  display: none;
+}
+:root .content-1SgpWY > :nth-child(2):not(.chat-2ZfjoI),
+:root .callContainer-BGIngG,
+:root .gatedContent-31-gID,
+:root .chat-2ZfjoI > .content-1jQy2l > .pageContainer-36uo3F,
+:root .content-1jQy2l > .container-3wLKDe,
+:root .container-2IKOsH {
+  z-index: 2;
+}
+:root .chat-2ZfjoI .form-3gdLxP {
+  padding-left: 66px;
+}
+:root .chat-2ZfjoI .form-3gdLxP .wrapper-2SplAX {
+  z-index: unset;
+}
+:root .chat-2ZfjoI .form-3gdLxP .channelTextArea-1FufC0 .scrollableContainer-15eg7h::after,
+:root .chat-2ZfjoI .form-3gdLxP .wrapper-2SplAX::after {
+  position: sticky;
+  content: "";
+  bottom: 2px;
+  left: -50px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--background-secondary);
+  border-radius: calc(var(--avatar-radius) + 2px);
+}
+:root .typing-2J1mQU {
+  left: 66px;
+  right: 26px;
+}
+:root .lookFilled-yCfaCM.colorPrimary-2AuQVo,
+:root .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover {
+  background-color: var(--brand-experiment);
+}
+
+
+
+/* theme */
 :root {
     --background-primary: #23283d;
     --background-secondary: #1e2233;
@@ -31,9 +97,9 @@
     /* ═══════『 Radial Status 』═══════ */
     --rs-small-spacing: 1px;
     --rs-medium-spacing: 3px;
-    --rs-large-spacing: 7px;
+    --rs-large-spacing: 3px;
     --rs-small-width: 2px;
-    --rs-medium-width: 3px;
+    --rs-medium-width: 4px;
     --rs-large-width: 4px;
     --rs-width: 3px;
     --rs-avatar-shape: 25%;
@@ -84,11 +150,11 @@
 #app-mount .videoWrapper-3rtb_V,
 #app-mount .wrapper-1_HaEi,
 #app-mount .wrapper-1gVUIN {
-    background: var(--backgroundColor02) !important
+    background: var(--background-secondary) !important
 }
 
 #app-mount .container-S9SaVf {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .emptyIconFriends-2LNxTX,
@@ -117,7 +183,7 @@
 #app-mount .lookFilled-yCfaCM.colorPrimary-1arORx.disabled,
 #app-mount .lookInverted-2mDUMi.colorBrand-21Le_q,
 #app-mount .lookInverted-2mDUMi.colorBrand-21Le_q.disabled {
-    background-color: var(--mainColor) !important;
+    background-color: var(--background-tertiary) !important;
     -webkit-transition: box-shadow .2s ease;
     -ms-transition: box-shadow .2s ease;
     -o-transition: box-shadow .2s ease;
@@ -132,7 +198,7 @@
 #app-mount .lookFilled-yCfaCM.colorGrey-2iAG-B:hover,
 #app-mount .lookFilled-yCfaCM.colorPrimary-1arORx:hover,
 #app-mount .lookInverted-2mDUMi.colorBrand-21Le_q:hover {
-    background-color: var(--mainColor);
+    background-color: var(--background-secondary-alt);
     -webkit-box-shadow: inset 0 0 0 10000px rgba(255, 255, 255, .2);
     -ms-box-shadow: inset 0 0 0 10000px rgba(255, 255, 255, .2);
     -moz-box-shadow: inset 0 0 0 10000px rgba(255, 255, 255, .2);
@@ -162,21 +228,21 @@
 }
 
 #app-mount .colorable-3rVGna.primaryDark-2UJt1G {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .button-12Fmur.enabled-9OeuTA:hover {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .button-3bklZh:hover {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .modeSelected-3DmyhH .content-1gYQeQ,
 #app-mount .modeSelected-3DmyhH:hover .content-1gYQeQ,
 #app-mount .wrapper-NhbLHG:hover .content-1gYQeQ {
-    background-color: var(--backgroundColor01)
+    background-color: var(--background-primary)
 }
 
 #app-mount .content-1gYQeQ {
@@ -219,15 +285,15 @@
 }
 
 #app-mount .wrapper-2fEmwW .users-2JoyGL {
-    background-color: var(--backgroundColor01)
+    background-color: var(--background-primary)
 }
 
 #app-mount .wrapper-2fEmwW .total-1c5KCN {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .wrapper-2fEmwW .total-1c5KCN:after {
-    border-right-color: var(--backgroundColor01) !important
+    border-right-color: var(--background-primary) !important
 }
 
 #app-mount .unread-36eUEm {
@@ -240,7 +306,7 @@
     -o-transition: box-shadow .2s ease;
     -moz-transition: box-shadow .2s ease;
     transition: box-shadow .2s ease;
-    background-color: #ffffff00;
+    background-color: var(--gradientColor02);
     z-index: 10;
     position: absolute
 }
@@ -252,7 +318,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--mainColor);
+    background-color: var(--background-primary);
     border-radius: 100%;
     z-index: -2;
     animation: pulse 2s infinite;
@@ -276,11 +342,11 @@
 }
 
 #app-mount .newMessagesBar-1hF-9G {
-    background-color: var(--mainColor)
+    background-color: var(--gradientColor02)
 }
 
 #app-mount .jumpToPresentBar-1cEnH0 {
-    background-color: var(--backgroundColor01);
+    background-color: var(--gradientColor02);
     box-shadow: inset 0 0 0 100px rgba(0, 0, 0, .15)
 }
 
@@ -359,15 +425,15 @@
 #app-mount .searchBar-3TnChZ .searchBarComponent-3N7dCG,
 #app-mount .searchBar-zdmu7v,
 #app-mount .threadSuggestionBar-3ExSyc {
-    background: var(--backgroundColor01) !important
+    background: var(--background-primary) !important
 }
 
 #app-mount .divider-2rZFJK:not(.isUnread-3Lojb-) {
-    border-color: var(--backgroundColor01) !important
+    border-color: var(--background-primary) !important
 }
 
 #app-mount .content-3spvdd {
-    background: var(--backgroundColor01) !important
+    background: var(--background-primary) !important
 }
 
 #app-mount .attachment-1PZZB2,
@@ -381,16 +447,16 @@
 #app-mount .selected-3B2w1z:hover,
 #app-mount .wrapper-1HIH0j,
 #app-mount .wrapperAudio-1Bzv_Z {
-    background: var(--backgroundColor01) !important;
+    background: var(--background-primary) !important;
     border: none !important
 }
 
 #app-mount .selected-3H3-RC {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .embedFull-1HGV2S {
-    background: var(--backgroundColor01) !important
+    background: var(--background-primary) !important
 }
 
 #app-mount .anchor-1MIwyf,
@@ -400,7 +466,7 @@
 }
 
 #app-mount .lookLink-15mFoz.colorBrand-I6CyqQ {
-    color: var(--mainColor) !important
+    color: var(--background-tertiary) !important
 }
 
 #app-mount .buffer-3eVqKK,
@@ -409,28 +475,28 @@
 #app-mount .mediaBarWrapper-33h1oY,
 #app-mount .mediaBarWrapper-33h1oY:after,
 #app-mount .mediaBarWrapper-33h1oY:before {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .mediaBarGrabber-FvJKJg,
 #app-mount .mediaBarProgress-38I317,
 #app-mount .mediaBarProgress-38I317:after,
 #app-mount .mediaBarProgress-38I317:before {
-    background-color: var(--mainColor) !important
+    background-color: var(--background-tertiary) !important
 }
 
 #app-mount .side-1lrxIh .themed-2-lozF.selected-g-kMVV.item-2GWPIy,
 #app-mount .topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-2GWPIy {
-    background-color: var(--mainColor) !important
+    background-color: var(--background-tertiary) !important
 }
 
 #app-mount .side-1lrxIh .themed-2-lozF.item-2GWPIy:hover:not(.disabled-1nofHP),
 #app-mount .topPill-3DJJNV .themed-2-lozF.item-2GWPIy:hover:not(.disabled-1nofHP) {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .actionButton-3-B2x- {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .peopleListItem-u6dGxF {
@@ -439,21 +505,21 @@
 
 #app-mount .peopleListItem-u6dGxF.active-2UF8Zh,
 #app-mount .peopleListItem-u6dGxF:hover {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .peopleListItem-u6dGxF.active-2UF8Zh .actionButton-3-B2x-,
 #app-mount .peopleListItem-u6dGxF:hover .actionButton-3-B2x- {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .akaBadge-3i7V3p {
-    background-color: var(--mainColor);
+    background-color: var(--background-tertiary);
     color: #fff !important
 }
 
 #app-mount .container-1oAagU {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .container-1oAagU .scroller-hE2gWq {
@@ -467,7 +533,7 @@
 
 #app-mount .emptyCard-KDifrB,
 #app-mount .wrapper-2RrXDg {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     border: none !important
 }
 
@@ -475,25 +541,25 @@
 #app-mount .emptyCard-KDifrB .section-3G9aLW,
 #app-mount .wrapper-2RrXDg .inset-SbsSFp,
 #app-mount .wrapper-2RrXDg .section-3G9aLW {
-    background-color: var(--backgroundColor02) !important;
+    background-color: var(--background-secondary) !important;
     box-shadow: 0 4px 5px -2px rgba(0, 0, 0, .3)
 }
 
 #app-mount .detailsBlock-24pLFz {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .feature-2IUcBI {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .pageWrapper-2PwDoS {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .card-2TuZPZ,
 #app-mount .iconMask-2fMR98 {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .search-25t1e9 .searchBox-pyIJJj .input-2g-os5 {
@@ -502,7 +568,7 @@
 }
 
 #app-mount .childWrapper-1j_1ub {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .tutorialContainer-1pL9QS .childWrapper-1j_1ub>svg {
@@ -533,8 +599,8 @@
 }
 
 #app-mount .circleIconButton-1VxDrg {
-    color: var(--mainColor) !important;
-    background-color: var(--backgroundColor01) !important
+    color: var(--gradientColor01) !important;
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .actionIcon-2sw4Sl,
@@ -565,8 +631,8 @@
 #app-mount .overlayToggleIconOn-3_-nGm .fill-MYciTJ,
 #app-mount .resultsGroup-1BPR25 .searchLearnMore-7__o_n a,
 #app-mount .topSectionNormal-2-vo2m .additionalActionsIcon-3Cy8UU {
-    color: var(--mainColor) !important;
-    fill: var(--mainColor) !important
+    color: var(--gradientColor02) !important;
+    fill: var(--gradientColor02) !important
 }
 
 #app-mount .colorDefault-CDqZdO.focused-3qFvc8 .checkbox-hADx5o,
@@ -579,7 +645,7 @@
 
 #app-mount .botTagRegular-kpctgU,
 #app-mount .wanderingCubesItem-3Us-UG {
-    background-color: var(--mainColor) !important
+    background-color: var(--rs-offline-color) !important
 }
 
 #app-mount .childContainer-U_a6Yh {
@@ -587,12 +653,12 @@
 }
 
 #app-mount .check-K_srvn {
-    background: var(--mainColor) !important;
+    background: var(--gradientColor01) !important;
     -webkit-mask-image: url(/assets/1c0a5d38bdeaaad433b68cf6092ed510.svg)
 }
 
 #app-mount .wordmarkWindows-2dq6rw {
-    color: var(--mainColor) !important
+    color: var(--gradientColor01) !important
 }
 
 #app-mount .wordmarkWindows-2dq6rw::after {
@@ -602,7 +668,7 @@
     height: 10px;
     width: 100px;
     margin-left: -10px;
-    color: var(--mainColor);
+    color: var(--gradientColor02);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat
@@ -615,7 +681,7 @@
 
 #app-mount .members-3WRCEx,
 #app-mount .members-3WRCEx>div {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .clickable-28SzVr.container-1oeRFJ .activity-2EQDZv {
@@ -628,7 +694,7 @@
 
 #app-mount .clickable-28SzVr.container-1oeRFJ:hover .layout-1qmrhw,
 #app-mount .selected-1-Z6gm .layout-1qmrhw {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .selected-1-Z6gm .activity-2EQDZv {
@@ -741,7 +807,7 @@
 
 #app-mount .message-2CShn3.mentioned-Tre-dv.selected-2LX7Jy,
 #app-mount .mouse-mode.full-motion .mentioned-Tre-dv:hover {
-    background-color: var(--mainColor)
+    background-color: var(--gradientColor01)
 }
 
 #app-mount .wrapper-1ZcZW- {
@@ -752,11 +818,11 @@
 
 #app-mount .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_),
 #app-mount .menu-1QACrS {
-    background-color: var(--backgroundColor01)
+    background-color: var(--background-primary)
 }
 
 #app-mount .colorDefault-CDqZdO.focused-3qFvc8 {
-    background-color: var(--mainColor) !important
+    background-color: var(--gradientColor01) !important
 }
 
 #app-mount .colorDefault-CDqZdO.focused-3qFvc8 .icon-E4cW1l {
@@ -795,42 +861,42 @@
 
 #app-mount .clickable-vvKY2q .header-3OsQeK:hover,
 #app-mount .selected-1GtAC5 .header-3OsQeK {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .bf-toolbar::before {
-    background: var(--backgroundColor01) !important
+    background: var(--background-primary) !important
 }
 
 #app-mount .bf-toolbar .format:hover {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .autocomplete-3l_oCd {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .autocomplete-3l_oCd .selected-3H3-RC {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .contentWrapper-3vHNP2 {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .contentWrapper-3vHNP2 .inspector-DFKXwB,
 #app-mount .contentWrapper-3vHNP2 .wrapper-1NNaWG {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .contentWrapper-3vHNP2 .container-1SX9VC,
 #app-mount .contentWrapper-3vHNP2 .emojiItem-277VFM.emojiItemSelected-2Lg50V,
 #app-mount .contentWrapper-3vHNP2 .navButtonActive-1EqC5l {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .contentWrapper-3vHNP2 .wrapper-22rqw6 {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .3)
 }
 
@@ -844,16 +910,16 @@
 }
 
 #app-mount .bar-2MWHzg {
-    background-color: var(--backgroundColor02)
+    background-color: var(--background-secondary)
 }
 
 #app-mount .noiseCancellationPopout-2-e5Xz {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-mobile-secondary) !important
 }
 
 #app-mount .notches-2w7UZJ.black-11MaxJ,
 #app-mount .notches-2w7UZJ.gray-3wP137 {
-    background-image: linear-gradient(to left, var(--backgroundColor02), var(--backgroundColor02));
+    background-image: linear-gradient(to left, var(--background-secondary), var(--background-secondary));
     -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='%2336393f'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 00-2 2v12a2 2 0 104 0V4a2 2 0 00-2-2z'/%3E%3C/svg%3E");
     mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='%2336393f'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 00-2 2v12a2 2 0 104 0V4a2 2 0 00-2-2z'/%3E%3C/svg%3E")
 }
@@ -864,18 +930,18 @@
 #app-mount .guildSection-2Zyzy8,
 #app-mount .progress-1S-TDF,
 #app-mount .tag-15zcD_ {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .quickswitcher-pKcM9U,
 #app-mount .scroller-2qwVWY,
 #app-mount .uploadModalIn-2w48Zf .uploadDropModal-13Kd20 .bgScale-1iWuPF {
-    background: var(--mainColor)
+    background: var(--gradientColor01)
 }
 
 #app-mount .input-3r5zZY,
 #app-mount .quickSelectPopoutOption-2E2UmS:hover {
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary-alt);
     color: #fff
 }
 
@@ -883,11 +949,11 @@
 #app-mount .quickSelectPopout-2F0PXw,
 #app-mount .resultFocused-3aIoYe,
 #app-mount .root-1e2tfc {
-    background-color: var(--backgroundColor01)
+    background-color: var(--background-primary)
 }
 
 #app-mount .root-g14mjS {
-    background: var(--backgroundColor02) !important;
+    background: var(--background-secondary) !important;
     box-shadow: none !important
 }
 
@@ -906,13 +972,13 @@
 }
 
 #app-mount .root-g14mjS .footer-31IekZ {
-    background: var(--backgroundColor02) !important;
+    background: var(--background-secondary) !important;
     box-shadow: none !important
 }
 
 #app-mount .root-g14mjS .container-x8Y1ix {
     border: none !important;
-    background-color: var(--backgroundColor01)
+    background-color: var(--background-primary)
 }
 
 #app-mount .root-g14mjS .container-x8Y1ix .colorStandard-21JIj7 {
@@ -920,35 +986,35 @@
 }
 
 #app-mount .root-g14mjS .uploadIcon-2wV7s_ svg circle {
-    fill: var(--mainColor) !important
+    fill: var(--gradientColor01) !important
 }
 
 #app-mount .input-2g-os5 {
-    background-color: var(--backgroundColor02) !important;
+    background-color: var(--background-secondary) !important;
     color: #fff !important;
     border-color: transparent !important
 }
 
 #app-mount .input-2g-os5:focus,
 #app-mount .input-2g-os5:hover {
-    border-color: var(--mainColor) !important
+    border-color: var(--gradientColor01) !important
 }
 
 #app-mount .emojiSection-3QtaWO,
 #app-mount .tooltipPrimary-3qLMbS {
-    background-color: var(--mainColor) !important
+    background-color: var(--gradientColor01) !important
 }
 
 #app-mount .tooltipPointer-3L49xb {
-    border-top-color: var(--mainColor) !important
+    border-top-color: var(--gradientColor01) !important
 }
 
 #app-mount .uploadModal-2ie9O_ {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .footer-VCsJQY {
-    background-color: var(--backgroundColor02) !important;
+    background-color: var(--background-secondary-alt) !important;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .3)
 }
 
@@ -957,8 +1023,8 @@
 }
 
 #app-mount .checkbox-f1HnKB[style*="rgb(79, 84, 92)"] {
-    border-color: var(--mainColor) !important;
-    background-color: var(--mainColor) !important
+    border-color: var(--gradientColor01) !important;
+    background-color: var(--gradientColor01) !important
 }
 
 #app-mount .checkbox-f1HnKB[style*="rgb(79, 84, 92)"] svg path {
@@ -966,53 +1032,53 @@
 }
 
 .bd-modal-wrapper .bd-modal-inner {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary-alt) !important
 }
 
 .bd-toast {
-    background: var(--backgroundColor01);
+    background: var(--background-primary);
     border: none !important
 }
 
 .bd-toast.toast-success {
-    background: var(--mainColor);
+    background: var(--gradientColor01);
     background-repeat: no-repeat;
     background-position: 3px 50%
 }
 
 #app-mount .reaction-2A2y9y {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .reaction-2A2y9y.reactionMe-3I9gFK {
-    background-color: var(--mainColor) !important;
+    background-color: var(--gradientColor01) !important;
     border-color: rgba(255, 255, 255, .5) !important
 }
 
 #app-mount .root-g14mjS .reactionSelected-1aMb2K,
 #app-mount .root-g14mjS .reactors-1VXca7 {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .root-g14mjS .scroller-2GkvCq {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .emojiPicker-6YCk8a,
 #app-mount .inspector-DFKXwB,
 #app-mount .wrapper-1NNaWG {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .container-1SX9VC,
 #app-mount .emojiItem-277VFM.emojiItemSelected-2Lg50V,
 #app-mount .wrapper-22rqw6 {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .categoryItemDefaultCategorySelected-2YeRUu,
 #app-mount .categoryItemDefaultCategorySelected-2YeRUu:hover {
-    background-color: var(--mainColor) !important
+    background-color: var(--gradientColor01) !important
 }
 
 #app-mount .children-3xh0VB:after,
@@ -1136,7 +1202,7 @@
 #app-mount .scroller::-webkit-scrollbar-thumb:hover,
 #app-mount .scrollerBase-_bVAAt::-webkit-scrollbar-thumb:hover,
 #app-mount .templatesList-uohY49::-webkit-scrollbar-thumb:hover {
-    background-color: var(--backgroundColor01)
+    background-color: var(--background-primary)
 }
 
 #app-mount .autocompleteScroller-3L6kmy::-webkit-scrollbar-thumb:active,
@@ -1155,7 +1221,7 @@
 #app-mount .scroller::-webkit-scrollbar-thumb:active,
 #app-mount .scrollerBase-_bVAAt::-webkit-scrollbar-thumb:active,
 #app-mount .templatesList-uohY49::-webkit-scrollbar-thumb:active {
-    background-color: var(--backgroundColor01)
+    background-color: var(--background-primary)
 }
 
 #app-mount .autocompleteScroller-3L6kmy::-webkit-scrollbar-button,
@@ -1233,7 +1299,7 @@
 
 #app-mount .wrapper-15CKyy,
 #app-mount .wrapper-22ayhK {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .attachment-16cAbS,
@@ -1243,7 +1309,7 @@
 }
 
 .container-2McqkF {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 .option-2KkUJO:after {
@@ -1254,40 +1320,40 @@
 .option-2KkUJO.selected-rZcOL-,
 .searchAnswer-23w-CH,
 .searchFilter-2UfsDk {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 .button-cfOvv-,
 .channelName-3w2Y3c,
 .searchHeader-1r_ZSh,
 .searchResultsWrap-5RVOkx {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 .searchResult-O9NDji,
 .tab-2Jo-cu.selected-2LAck8 {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .avatarUploaderInner-Oiob_P {
-    border-color: var(--backgroundColor01) !important
+    border-color: var(--background-primary) !important
 }
 
 #app-mount .profileBannerPreview-3_l0Wd {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .accountProfileCard-lbN7n- {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .accountProfileCard-lbN7n- .fieldList-in8WkP {
-    background-color: var(--backgroundColor02) !important;
+    background-color: var(--background-secondary) !important;
     padding: 15px
 }
 
 #app-mount .accountProfileCard-lbN7n- .avatar-3mTjvZ {
-    border-color: var(--backgroundColor01) !important
+    border-color: var(--background-primary) !important
 }
 
 #app-mount .contentColumn-1C7as6,
@@ -1309,7 +1375,7 @@
 #app-mount .pageActions-1crTQL,
 #app-mount .paymentPane-ut5qKZ,
 #app-mount .userSettingsVoice-1_dzjw .previewOverlay-2reuWf {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     border: none !important
 }
 
@@ -1320,7 +1386,7 @@
 #app-mount .phoneField-3NAPDv .inputField-1iYysB,
 #app-mount .popoutList-10IFAa,
 #app-mount .previewMessage-2uxBrA {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .bottomDivider-ZmTm-j,
@@ -1332,18 +1398,18 @@
 #app-mount .connectionHeader-2rV1ze,
 #app-mount .expandedInfo-1W31i3,
 #app-mount .integration-1f5IUi {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, .3)
 }
 
 #app-mount .fieldList-in8WkP {
-    background-color: var(--backgroundColor02) !important;
+    background-color: var(--background-secondary) !important;
     box-shadow: 0 4px 5px -2px rgba(0, 0, 0, .3)
 }
 
 #app-mount .popoutListInput-1w4TxY .inner-2pOSmK {
     border-radius: 4px;
-    background-color: var(--backgroundColor02) !important;
+    background-color: var(--background-secondary) !important;
     padding: 4px
 }
 
@@ -1352,11 +1418,11 @@
 }
 
 #app-mount .selectableItem-3-fmiM:hover {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .side-1lrxIh .themed-2-lozF.selected-g-kMVV.item-2GWPIy:hover {
-    background-color: var(--mainColor) !important
+    background-color: var(--gradientColor01) !important
 }
 
 #app-mount .side-1lrxIh .item-2GWPIy[style*="rgb(237, 66, 69)"]:hover,
@@ -1366,20 +1432,20 @@
 }
 
 #app-mount .wrapper-SdcMKg {
-    border-color: var(--mainColor) !important
+    border-color: var(--gradientColor01) !important
 }
 
 #app-mount .option-1QI4c9:hover,
 #app-mount .selected-18Wszc.option-1QI4c9 {
-    background-color: var(--mainColor) !important
+    background-color: var(--gradientColor01) !important
 }
 
 #app-mount .option-1QI4c9 {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .disabled-35mc5w {
-    color: var(--backgroundColor01) !important
+    color: var(--background-primary) !important
 }
 
 #app-mount .disabled-35mc5w:hover {
@@ -1387,16 +1453,16 @@
 }
 
 #app-mount .radioBar-3w9XY- {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .radioBar-3w9XY- svg path {
-    fill: var(--mainColor);
+    fill: var(--gradientColor01);
     opacity: .35
 }
 
 #app-mount .radioBar-3w9XY- svg circle {
-    fill: var(--mainColor)
+    fill: var(--gradientColor01)
 }
 
 #app-mount .radioBar-3w9XY-[style*="#ed4245"] svg path {
@@ -1427,11 +1493,11 @@
 }
 
 #app-mount .container-2nx-BQ[style*=rgb] {
-    background-color: var(--mainColor) !important
+    background-color: var(--gradientColor01) !important
 }
 
 #app-mount .container-2nx-BQ[style*="rgb(114, 118, 125)"] {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     box-shadow: inset 0 0 0 100px rgba(255, 255, 255, .05)
 }
 
@@ -1440,22 +1506,22 @@
 }
 
 #app-mount .bd-switch .bd-switch-body {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     box-shadow: inset 0 0 0 100px rgba(255, 255, 255, .05)
 }
 
 #app-mount .bd-switch input:checked+.bd-switch-body {
     --switch-color: base.$accent;
-    background-color: var(--mainColor) !important
+    background-color: var(--gradientColor01) !important
 }
 
 #app-mount .slider-1NC-Gf .bar-1Bhnl9 {
-    background: var(--backgroundColor01);
+    background: var(--background-primary);
     box-shadow: inset 0 0 0 100px rgba(255, 255, 255, .01)
 }
 
 #app-mount .slider-1NC-Gf .barFill-2Bh7CX {
-    background: var(--mainColor)
+    background: var(--gradientColor01)
 }
 
 #app-mount .slider-1NC-Gf .defaultValue-19SZ-q .markValue-2U_-UG {
@@ -1469,7 +1535,7 @@
 #app-mount .lookFilled-1GseHa.select-1Ia3hD,
 #app-mount .popout-1KHNAq {
     border: none !important;
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .addGamePopout-3yePJc,
@@ -1477,7 +1543,7 @@
 #app-mount .option-2eIyOn:focus,
 #app-mount .option-2eIyOn:hover,
 #app-mount .option-2eIyOn[aria-selected=true] {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .addGamePopout-3yePJc .select-1YfRS9,
@@ -1493,7 +1559,7 @@
 #app-mount .option-2eIyOn:focus .css-3vaxre-menu,
 #app-mount .option-2eIyOn:hover .css-3vaxre-menu,
 #app-mount .option-2eIyOn[aria-selected=true] .css-3vaxre-menu {
-    background-color: var(--backgroundColor02) !important;
+    background-color: var(--background-secondary) !important;
     border: none !important
 }
 
@@ -1502,18 +1568,18 @@
 #app-mount .option-2eIyOn:focus .css-3vaxre-menu .css-rzbxvl-option,
 #app-mount .option-2eIyOn:hover .css-3vaxre-menu .css-rzbxvl-option,
 #app-mount .option-2eIyOn[aria-selected=true] .css-3vaxre-menu .css-rzbxvl-option {
-    background-color: var(--backgroundColor02) !important;
+    background-color: var(--background-secondary) !important;
     box-shadow: inset 0 0 0 100px rgba(0, 0, 0, .15)
 }
 
 #app-mount .css-3vaxre-menu {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     border: 1px solid rgba(0, 0, 0, .5) !important;
     border-top: none !important
 }
 
 #app-mount .css-1ba14n5-option {
-    background-color: var(--backgroundColor02) !important;
+    background-color: var(--background-secondary) !important;
     box-shadow: inset 0 0 0 100px rgba(0, 0, 0, .15)
 }
 
@@ -1522,17 +1588,17 @@
 }
 
 #app-mount .bd-select .bd-select-options {
-    background: var(--backgroundColor01) !important;
+    background: var(--background-primary) !important;
     box-shadow: none !important
 }
 
 #app-mount .bd-select .bd-select-option.selected {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     box-shadow: inset 0 0 0 100px rgba(0, 0, 0, .15) !important
 }
 
 #app-mount .wrapper-3AZUiP {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .game-3x3aDt {
@@ -1540,22 +1606,22 @@
 }
 
 #app-mount .default-1Tkeeg {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     box-shadow: inset 0 0 0 100px rgba(0, 0, 0, .3);
     border: none !important
 }
 
 #app-mount .card-2ART2V:before {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     border: none !important
 }
 
 #app-mount .bd-addon-list .bd-addon-card {
-    background: var(--backgroundColor01) !important
+    background: var(--background-primary) !important
 }
 
 #app-mount .bd-addon-list .bd-addon-header {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     box-shadow: inset 0 0 0 100px rgba(0, 0, 0, .3)
 }
 
@@ -1579,7 +1645,7 @@
 #app-mount .tierInProgress-1vFUnw,
 #app-mount .upsellContainer-L9xv7w,
 #app-mount .upsellFooter-ZYsio_ {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .focused-qp-W9B,
@@ -1589,11 +1655,11 @@
 #app-mount .selected-22ukbQ,
 #app-mount .titleContainer-3fPic2,
 #app-mount .welcomeChannel-_Q4qAA {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .settingsFormFieldWrapper-U99c9i {
-    background-color: var(--backgroundColor02) !important;
+    background-color: var(--background-secondary) !important;
     border: none !important
 }
 
@@ -1603,49 +1669,49 @@
 
 #app-mount .headerClickable-zGQJz3,
 #app-mount .headerDefault-1wrJcN {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     border: none !important
 }
 
 #app-mount .top-K_jibn .brand-3g5E0C.item-2GWPIy:active,
 #app-mount .top-K_jibn .brand-3g5E0C.item-2GWPIy:hover,
 #app-mount .top-K_jibn .brand-3g5E0C.selected-g-kMVV.item-2GWPIy {
-    border-bottom-color: var(--mainColor) !important
+    border-bottom-color: var(--gradientColor01) !important
 }
 
 #app-mount .featureIcon-3p1TC_,
 #app-mount .icon-2DGsye,
 #app-mount .primary-38Hs-h:hover:not(.disabled-184-il),
 #app-mount .secondary-2bzKEX {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .featureIcon-3p1TC_ svg,
 #app-mount .icon-2DGsye svg,
 #app-mount .primary-38Hs-h:hover:not(.disabled-184-il) svg,
 #app-mount .secondary-2bzKEX svg {
-    color: var(--mainColor) !important
+    color: var(--gradientColor01) !important
 }
 
 #app-mount .featureIcon-3p1TC_ svg path,
 #app-mount .icon-2DGsye svg path,
 #app-mount .primary-38Hs-h:hover:not(.disabled-184-il) svg path,
 #app-mount .secondary-2bzKEX svg path {
-    fill: var(--mainColor) !important
+    fill: var(--gradientColor01) !important
 }
 
 #app-mount .button-YGmtzG:hover,
 #app-mount .notice-2olXi7 {
-    background-color: var(--mainColor) !important
+    background-color: var(--gradientColor01) !important
 }
 
 #app-mount .checklistIcon-D7psvE .checkbox-f1HnKB {
-    background-color: var(--mainColor) !important;
+    background-color: var(--gradientColor01) !important;
     border: none !important
 }
 
 #app-mount .checkbox-f1HnKB[style*="rgb(114, 137, 218)"] {
-    background-color: var(--mainColor) !important;
+    background-color: var(--gradientColor01) !important;
     border: none !important
 }
 
@@ -1654,7 +1720,7 @@
 }
 
 #app-mount .item-4m-12I {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .item-4m-12I.deny-1GO6vI.selected-3jieYB {
@@ -1671,7 +1737,7 @@
 }
 
 #app-mount .cardWrapper-CyvwQv {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .checklistHeader-3liG7E,
@@ -1680,29 +1746,29 @@
 #app-mount .gemIndicatorContainer-PqApbX,
 #app-mount .header-2Y0-A-,
 #app-mount .tierHeaderLocked-1a2opw {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     box-shadow: inset 0 0 0 100px rgba(0, 0, 0, .3)
 }
 
 #app-mount .tierLock-1oFMOZ {
-    color: var(--mainColor) !important
+    color: var(--gradientColor01) !important
 }
 
 #app-mount .background-3xJH_4,
 #app-mount .gemWithoutLabel-1od40y {
-    color: var(--backgroundColor01) !important
+    color: var(--background-primary) !important
 }
 
 #app-mount .premiumIndicator-22GgcZ {
-    background-color: var(--mainColor) !important
+    background-color: var(--gradientColor01) !important
 }
 
 .container-18GwIk {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 .container-18GwIk .container-2rzKKA {
-    background-color: var(--backgroundColor02) !important;
+    background-color: var(--background-secondary) !important;
     border: none !important
 }
 
@@ -1712,8 +1778,8 @@
 }
 
 .container-18GwIk .checkbox-f1HnKB.checked-1pZh2h {
-    background-color: var(--mainColor) !important;
-    border-color: var(--mainColor) !important
+    background-color: var(--gradientColor01) !important;
+    border-color: var(--gradientColor01) !important
 }
 
 .chatHeaderBar-2fUORh {
@@ -1742,11 +1808,11 @@
 }
 
 #app-mount .avatar-3QF_VA {
-    border-color: var(--backgroundColor02) !important
+    border-color: var(--background-secondary) !important
 }
 
 #app-mount .topSection-13QKHs {
-    background-color: var(--backgroundColor02) !important;
+    background-color: var(--background-secondary) !important;
     box-shadow: 0 2px 15px rgba(0, 0, 0, .4);
     position: relative;
     z-index: 200
@@ -1764,7 +1830,7 @@
 }
 
 #app-mount .body-1Ukv50 {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .infoScroller-1QMpon {
@@ -1780,7 +1846,7 @@
 }
 
 #app-mount .userInfoSection-2u2hir .note-3M15gE textarea {
-    background-color: var(--backgroundColor02) !important;
+    background-color: var(--background-secondary) !important;
     border-radius: 4px
 }
 
@@ -1802,14 +1868,14 @@
 }
 
 #app-mount .listScroller-entkMk .listRow-2nO1T6:hover {
-    background-color: var(--backgroundColor02) !important;
+    background-color: var(--background-secondary) !important;
     border-radius: 6px
 }
 
 #app-mount .activity-1gTu-L {
     overflow: hidden;
     position: relative;
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
     padding: 16px;
     margin-bottom: 16px
 }
@@ -1837,7 +1903,7 @@
 }
 
 #app-mount .activity-1gTu-L::before {
-    background-color: var(--mainColor);
+    background-color: var(--gradientColor01);
     background-image: linear-gradient(-45deg, var(--gradientColor01), var(--gradientColor02));
     opacity: .75;
     content: "";
@@ -1860,12 +1926,12 @@
 }
 
 #app-mount .avatar-2Vndt_ {
-    background-color: var(--backgroundColor01) !important;
-    border-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important;
+    border-color: var(--background-primary) !important
 }
 
 #app-mount .headerTop-2cWpdB {
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
     border: none !important
 }
 
@@ -1889,7 +1955,7 @@
 }
 
 #app-mount .activity-fViXj7 .timeBarUserPopout-qLXZaR .bar-1GpknY {
-    background-color: var(--backgroundColor01)
+    background-color: var(--background-primary)
 }
 
 #app-mount .customStatus-3XAoF9 {
@@ -1897,7 +1963,7 @@
 }
 
 #app-mount .userPopout-2j1gM4 {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
     -ms-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
     -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
@@ -1908,12 +1974,12 @@
 #app-mount .bodyInnerWrapper-2bQs1k,
 #app-mount .footer-3naVBw,
 #app-mount .userPopout-2j1gM4 {
-    background-color: var(--backgroundColor01) !important
+    background-color: var(--background-primary) !important
 }
 
 #app-mount .avatar-22FtUu {
-    border: 6px solid var(--backgroundColor01);
-    background-color: var(--backgroundColor02)
+    border: 6px solid var(--background-primary);
+    background-color: var(--background-secondary)
 }
 
 #app-mount .footer-1fjuF6 input {
@@ -1922,13 +1988,13 @@
 }
 
 #app-mount .footer-1fjuF6 input:hover {
-    border-color: var(--backgroundColor02)
+    border-color: var(--background-secondary)
 }
 
 #app-mount .footer-1fjuF6 input:focus,
 #app-mount .footer-1fjuF6 input:focus:hover {
-    background-color: var(--backgroundColor02) !important;
-    border-color: var(--mainColor)
+    background-color: var(--background-secondary) !important;
+    border-color: var(--gradientColor01)
 }
 
 #app-mount .rolesList-3uZoaa {
@@ -1945,13 +2011,13 @@
 }
 
 #app-mount .note-Go5ZP2 textarea:hover {
-    border-color: var(--backgroundColor02)
+    border-color: var(--background-secondary)
 }
 
 #app-mount .note-Go5ZP2 textarea:focus,
 #app-mount .note-Go5ZP2 textarea:focus:hover {
-    background-color: var(--backgroundColor02) !important;
-    border-color: var(--mainColor)
+    background-color: var(--background-secondary) !important;
+    border-color: var(--gradientColor01)
 }
 
 #app-mount .note-3HfJZ5 {
@@ -1969,7 +2035,7 @@
 }
 
 #app-mount .container-2O1UgZ {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     -webkit-box-shadow: inset 0 0 0 100000px rgba(0, 0, 0, .3), 0 0 10px 0 rgba(0, 0, 0, .5);
     -ms-box-shadow: inset 0 0 0 100000px rgba(0, 0, 0, .3), 0 0 10px 0 rgba(0, 0, 0, .5);
     -moz-box-shadow: inset 0 0 0 100000px rgba(0, 0, 0, .3), 0 0 10px 0 rgba(0, 0, 0, .5);
@@ -1979,18 +2045,18 @@
 }
 
 #app-mount .container-2O1UgZ .inner-2pOSmK {
-    background-color: var(--backgroundColor02) !important;
+    background-color: var(--background-secondary) !important;
     border: 1px solid rgba(0, 0, 0, .2)
 }
 
 #app-mount .container-2O1UgZ .focused-qp-W9B,
 #app-mount .container-2O1UgZ .item-1BCeuB:hover {
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .tabBarContainer-1IbuvX {
     border: none !important;
-    background-color: var(--backgroundColor02) !important
+    background-color: var(--background-secondary) !important
 }
 
 #app-mount .tabBarContainer-1IbuvX .tabBarItem-1b8RUP {
@@ -2004,7 +2070,7 @@
 #app-mount .tabBarContainer-1IbuvX .tabBarItem-1b8RUP[aria-selected=true],
 #app-mount .tabBarContainer-1IbuvX .tabBarItem-1b8RUP[aria-selected=true]:hover {
     color: #fff !important;
-    border-color: var(--mainColor) !important
+    border-color: var(--gradientColor01) !important
 }
 
 #app-mount .userInfoSection-2u2hir:nth-child(2) {
@@ -2012,16 +2078,16 @@
 }
 
 #app-mount .connectedAccount-1xKpli {
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary);
     border: none !important
 }
 
 #app-mount .listRow-hutiT_:hover {
-    background-color: var(--backgroundColor02)
+    background-color: var(--background-secondary)
 }
 
 #app-mount .topSectionNormal-2-vo2m {
-    background-color: var(--backgroundColor01) !important;
+    background-color: var(--background-primary) !important;
     -webkit-box-shadow: inset 0 0 0 100000px rgba(0, 0, 0, .3);
     -ms-box-shadow: inset 0 0 0 100000px rgba(0, 0, 0, .3);
     -moz-box-shadow: inset 0 0 0 100000px rgba(0, 0, 0, .3);
@@ -2067,7 +2133,7 @@
 }
 
 #app-mount .newBrand .textBadge-1fdDPJ[style*="rgb(88, 101, 242)"] {
-    background-color: var(--mainColor) !important
+    background-color: var(--gradientColor01) !important
 }
 
 #app-mount .userInfoSection-3her-v {
@@ -2075,12 +2141,12 @@
 }
 
 .interactiveSelected-29CP8y {
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
 }
 
 .interactive-1vLZ_I:focus-within,
 .interactive-1vLZ_I:hover {
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
 }
 
 .scroller-RfJjkV {
@@ -2092,35 +2158,35 @@
 }
 
 .chat-1-OBC7 {
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
 }
 
 .theme-dark .perksModal-CLcR1c {
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
 }
 
 .ctaBar-Nhk8yY {
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary);
 }
 
 .theme-dark .tierHeaderLocked-3ItHYn {
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary);
 }
 
 .theme-dark .tierBody-3ju-rc {
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
 }
 
 .theme-dark .perk-19D_HN {
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary);
 }
 
 .userProfileInnerThemedNonPremium-1gT-zY {
-    background: var(--backgroundColor01);
+    background: var(--background-primary);
 }
 
 .overlayBackground-arbZMT {
-    background: var(--backgroundColor02);
+    background: var(--background-secondary);
 }
 
 .userProfileInnerThemedWithBanner-2624Yx {
@@ -2128,7 +2194,7 @@
 }
 
 .userProfileInnerThemedPremiumWithoutBanner-1yMS1H {
-    background: var(--backgroundColor01);
+    background: var(--background-primary);
 }
 
 .section-3FmfOT {
@@ -2143,40 +2209,40 @@
 }
 
 .theme-dark .container-3wLKDe {
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary);
 }
 
 .mainCard-3KBsBI {
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
 }
 
 .sidebarCard-1Gn1ch {
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
 }
 
 .pill-3pRQlO {
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
 }
 
 .theme-dark .container-2qVG6q.isOpen-2OXbFs {
-    background-color: var(--backgroundColor02);
-    border: 3px solid var(--backgroundColor01);
+    background-color: var(--background-secondary);
+    border: 3px solid var(--background-primary);
 }
 
 .container-2qVG6q:hover {
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary);
 }
 
 .container-3XgAHv {
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
 }
 
 .iconWrapper-3FqQ75 {
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary);
 }
 
 .container-3YcgdM {
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
     border: none;
 }
 
@@ -2186,7 +2252,7 @@
 
 .addReactButton-3bSQb6,
 .buttonInner-3aRbcx {
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary);
 }
 
 .theme-dark .headerClickable-zGQJz3,
@@ -2283,7 +2349,7 @@
 }
 
 .buttonColor-XIRMbp {
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
     border-radius: 0px;
 }
 
@@ -2355,7 +2421,7 @@
 
 .theme-dark .bar-2H7Q9u,
 .theme-dark .markDash-1ATsxA {
-    background: var(--backgroundColor01)
+    background: var(--background-primary)
 }
 
 .barFill-3RgCsY {
@@ -2375,7 +2441,7 @@
 }
 
 .option-Uc12mm:hover {
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary);
 }
 
 .previewMessage-2g_aBv {
@@ -2531,7 +2597,7 @@
 }
 
 .upsellFooter-3M1V33 {
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
 }
 
 .checklistItem-1gWPPD {
@@ -2600,31 +2666,31 @@
 
 /* Search */
 .searchBar-jGtisZ {
-    background: var(--backgroundColor01);
+    background: var(--background-primary);
 }
 
 .theme-dark .rootWithShadow-2hdL2J {
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
 }
 
 .theme-dark .footerSeparator-3U8YsT {
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary);
 }
 
 .theme-dark .calendarPicker-sDhzdi .react-datepicker {
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
 }
 
 .theme-dark .calendarPicker-sDhzdi .react-datepicker__day {
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary);
 }
 
 .theme-dark .calendarPicker-sDhzdi .react-datepicker__day--disabled, .theme-dark .calendarPicker-sDhzdi .react-datepicker__day--outside-month, .theme-dark .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled, .theme-dark .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled:hover {
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary);
 }
 
 .theme-dark .calendarPicker-sDhzdi .react-datepicker__header {
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary-alt);
 }
 
 .userProfileInner-3F03PX:before {
@@ -2633,36 +2699,36 @@
 }
 
 .panelBanner-13bsBR {
-    border-left: 3px solid var(--backgroundColor01);
+    border-left: 3px solid var(--background-primary);
 }
 
 .welcomeCTAButton-24ZR8d {
-    border: 3px solid var(--backgroundColor01);
+    border: 3px solid var(--background-primary);
     border-radius: 10px;
 }
 
 .container-1A0qQO{
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary);
 }
 
 .theme-dark .panel-2ZFCRb {
     background: none;
-    border-bottom: 1px solid var(--mainColor);
+    border-bottom: 1px solid var(--gradientColor01);
 }
 
 .container-KM8BU6 .reactors-1VXca7 {
-    background: var(--backgroundColor01);
+    background: var(--background-primary);
 }
 
 .scroller-2GkvCq {
     background: none;
-    border-right: 2px solid var(--mainColor);
+    border-right: 2px solid var(--gradientColor01);
 }
 
 .reactionSelected-1aMb2K{
-    background-color: var(--backgroundColor02);
+    background-color: var(--background-secondary);
 }
 
 .matchingPostsRow-2IiEQ1{
-    background-color: var(--backgroundColor01);
+    background-color: var(--background-primary);
 }
